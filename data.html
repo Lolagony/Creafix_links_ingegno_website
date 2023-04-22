@@ -1,0 +1,19 @@
+---
+title: csv to json
+layout: page
+---
+{% raw %}
+<div id="data"></div>
+<script>
+  function init() {
+    Tabletop.init({
+      key: 2PACX-1vQ0OLwQqcJjwgg5za3Cod1O449d3MCQkOkv1XkuRf0s_ACYoJPT2e34BOpLCG2lBQzBoAIbZJvR3CbP,
+      callback: function(data, tabletop) {
+        console.log(data)
+      },
+      simpleSheet: true 
+    })
+  }
+  window.addEventListener('DOMContentLoaded', init)
+</script>
+{% endraw %}
